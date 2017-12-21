@@ -1,0 +1,22 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8860/eureka/
+server:
+  port: ***********
+#  max-http-header-size: 2000000
+spring:
+  application:
+    name: partime-meow-nan
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/meetingsign?useUnicode=true&characterEncoding=utf8
+    username: ***********
+    password: ***********
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+  data:
+     mongodb:
+       uri: mongodb://localhost:27017/test
